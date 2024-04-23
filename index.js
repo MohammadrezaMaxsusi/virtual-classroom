@@ -4,6 +4,7 @@ let app = express();
 let http = require('http').Server(app);
 let io = require('socket.io')(http);
 let mysql = require('mysql');
+console.log(config.db)
 let connection = mysql.createConnection(config.db);
 
 app.use(express.static('public'));
@@ -16,7 +17,6 @@ app.get('/getLesson', function (req, res) {
     
     connection.query('SELECT * FROM content_blocks', function (a, b, c) {
         res.send(b);
-        console.log(b)
     })
 });
 
