@@ -4,9 +4,9 @@ let app = express();
 let http = require('http').Server(app);
 let io = require('socket.io')(http);
 let mysql = require('mysql');
-console.log(config.db)
-let connection = mysql.createConnection(config.db);
 
+let connection = mysql.createConnection(config.db);
+console.log(connection)
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.set('views', './views');
