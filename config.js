@@ -1,9 +1,9 @@
 const config = {
     db: {
         host: 'localhost',
-        user: 'root',
-        password: '',
-        database: 'classroom'
+        user: 'maxsusi',
+        password: '2783@Rtda',
+        database: 'testDb'
     },
     socketPort:'3000',
     httpPort:'2000'
