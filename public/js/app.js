@@ -278,7 +278,7 @@ let StudentLayout = React.createClass({
 if (sid == null) {
     ReactDOM.render(
         <div>
-            <LoginForm defaultEmail="student1@mail.com"/>
+            <LoginForm defaultEmail="student5@mail.com"/>
         </div>
         ,
         document.getElementById('root')
@@ -292,7 +292,7 @@ socket.on('logout', function () {
     reactCookie.remove('sid');
     ReactDOM.render(
         <div>
-            <LoginForm defaultEmail="student1@mail.com"/>
+            <LoginForm defaultEmail="student5@mail.com"/>
         </div>
         ,
         document.getElementById('root')
@@ -303,7 +303,7 @@ socket.on('initError', function () {
     sid = null;
     ReactDOM.render(
         <div>
-            <LoginForm defaultEmail="student1@mail.com"/>
+            <LoginForm defaultEmail="student5@mail.com"/>
         </div>
         ,
         document.getElementById('root')
