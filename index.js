@@ -13,8 +13,10 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 app.get('/getLesson', function (req, res) {
+    
     connection.query('SELECT * FROM content_blocks', function (a, b, c) {
         res.send(b);
+        console.log(b)
     })
 });
 
