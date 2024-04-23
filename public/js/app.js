@@ -20,7 +20,7 @@ let LoginForm = React.createClass({
     render: function () {
         return <div className="container" id="form-signin">
             <form>
-                <h2>Please login</h2>
+                <h2>وارد شوید</h2>
                 {this.state.error}
                 <div className="form-group">
                     <label htmlFor="email" className="sr-only">Email address</label>
