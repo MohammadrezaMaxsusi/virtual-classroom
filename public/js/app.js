@@ -9,6 +9,7 @@ let LoginForm = React.createClass({
         this.setState({error: <div className="alert alert-danger">Wrong email or password</div>});
     },
     emitLogin: function () {
+        console.log("test")
         socket.emit('login', {
             email: this.refs.email.value,
             password: this.refs.password.value
@@ -38,7 +39,7 @@ let LoginForm = React.createClass({
                                placeholder="Password"/>
                     </div>
                 </div>
-                <button type="button" className="btn btn-lg btn-primary btn-block" onClick={this.emitLogin}>Sign me in
+                <button type="button" className="btn btn-lg btn-primary btn-block" onClick={this.emitLogin}>ورود
                 </button>
             </form>
         </div>
